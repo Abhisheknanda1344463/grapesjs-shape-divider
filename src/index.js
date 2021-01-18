@@ -1,17 +1,66 @@
+import grapesjs from 'grapesjs';
 import loadComponents from './components';
 import loadBlocks from './blocks';
 
-export default (editor, opts = {}) => {
+export default grapesjs.plugins.add('grapesjs-shape-divider', (editor, opts = {}) => {
   const options = { ...{
-    // default options
-  },  ...opts };
+  // let c = opts;
+  //
+  // let defaults = {
+    shapedividerBlock: {},
 
+    // Default style
+    defaultStyle: true,
+
+    // Section class prefix
+    sectionClsPfx: 'gjs',
+
+    // Countdown label
+    labelShapeDvd: 'Shape Divider',
+
+    // Countdown category label
+    labelSectionCategory: 'Extra',
+
+    //Label Svg
+    labelSvg: 'svg',
+
+    //labelType
+    labelType: 'shape-divider',
+
+    style: `
+      .gjs-shape-divider{
+        position:absolute;
+        width:100%;
+        height:100px;
+        color:black;
+        overflow:hidden;
+      }
+      .gjs-shape-divider > svg{
+        height:100%;
+        width:100%;
+        transform:scaleY(-1);
+      }
+      .gjs-shape-divider--fl-v > svg{
+        transform:scaleY(1);
+      }
+      .gjs-shape-divider--fl-h > svg{
+        transform:scaleX(-1) scaleY(-1);
+      }
+      .gjs-shape-divider--fl-v-h > svg{
+        transform:scaleY(1) scaleX(-1);
+      }
+      .gjs-shape-divider > svg > path{
+        fill:currentColor;
+      }
+      .gjs-shape-divider-inv > path{
+        transform:scale(-1, -1) translate(-100%, -100%);
+      }
+    `
+    },  ...opts };
   // Add components
   loadComponents(editor, options);
 
-  // Add blocks
+  // Add components
   loadBlocks(editor, options);
 
-  // TODO Remove
-  editor.on('load', () => editor.addComponents(`<div style="margin:100px; padding:25px;">Content loaded from the plugin</div>`, { at: 0 }))
-};
+});

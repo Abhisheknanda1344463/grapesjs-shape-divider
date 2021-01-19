@@ -1,7 +1,7 @@
 {
-  "name": "grapesjs-shape-divider",
+  "name": "grapesjs-shape-divider.",
   "version": "0.3.4",
-  "description": "GrapesJS Plugin Section",
+  "description": "GrapesJS Shape Divider",
   "main": "dist/grapesjs-shape-divider.min.js",
   "scripts": {
     "lint": "eslint src",
@@ -19,7 +19,7 @@
     "boilerplate",
     "wysiwyg"
   ],
-  "author": "Artur Arseniev",
+  "author": "abhishek94",
   "license": "BSD-3-Clause",
   "babel": {
     "presets": [

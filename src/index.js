@@ -19,7 +19,7 @@ export default grapesjs.plugins.add('grapesjs-shape-divider', (editor, opts = {}
     labelShapeDvd: 'Shape Divider',
 
     // Countdown category label
-    labelSectionCategory: 'Extra',
+    labelSectionCategory: 'Selection',
 
     //Label Svg
     labelSvg: 'svg',

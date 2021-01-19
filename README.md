@@ -1,4 +1,4 @@
-# GrapesJS Plugin Shape Divider
+# GrapesJS Shape Divider
 
 This plugin adds a Shape divider block with different svg shapes.
 

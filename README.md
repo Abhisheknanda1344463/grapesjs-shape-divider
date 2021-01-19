@@ -25,7 +25,7 @@ This plugin adds a Shape divider block with different svg shapes.
 - NPM
   - `npm i grapesjs-shape-divider`
 - GIT
-  - `git clone https://github.com/olivmonnier/grapesjs-shape-divider.git`
+  - `git clone https://github.com/Abhisheknanda1344463/grapesjs-shape-divider`
 
 ## Usage
 
@@ -53,7 +53,7 @@ This plugin adds a Shape divider block with different svg shapes.
 Clone the repository
 
 ```sh
-$ git clone https://github.com/olivmonnier/grapesjs-shape-divider.git
+$ git clone https://github.com/Abhisheknanda1344463/grapesjs-shape-divider
 $ cd grapesjs-shape-divider
 ```
 

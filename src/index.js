@@ -15,10 +15,10 @@ export default grapesjs.plugins.add('grapesjs-shape-divider', (editor, opts = {}
     // Section class prefix
     sectionClsPfx: 'gjs',
 
-    // Countdown label
+    // Shp-divder label
     labelShapeDvd: 'Shape Divider',
 
-    // Countdown category label
+    // Shp-divder category label
     labelSectionCategory: 'Selection',
 
     //Label Svg

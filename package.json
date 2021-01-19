@@ -1,6 +1,6 @@
 {
   "name": "grapesjs-shape-divider",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "GrapesJS Shape Divider",
   "main": "dist/grapesjs-shape-divider.min.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/artf/grapesjs-shape-divider.git"
+    "url": "https://github.com/Abhisheknanda1344463/grapesjs-shape-divider.git"
   },
   "keywords": [
     "grapesjs",

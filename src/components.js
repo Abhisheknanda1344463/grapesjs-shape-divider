@@ -92,7 +92,7 @@ export default (editor, opt = {}) => {
       defaults: {
         name: 'Shape divider',
         droppable: false,
-        copyable: false,
+        copyable: true,
         shape: 'none',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path d="M2 2v18h18V2H2zm0-2h18a2 2 0 012 2v18a2 2 0 01-2 2H2a2 2 0 01-2-2V2C0 .9.9 0 2 0zM1 13L2 0h18l1 9-20 4z"></path></svg>`,
         content: `<svg preserveAspectRatio="none" viewBox="0 0 240 24">
@@ -146,6 +146,7 @@ export default (editor, opt = {}) => {
         this.on('change:flip-horz', this.flpHorizontal);
       },
       chgShape(){
+        const { $ } = editor;
         var newElem = $('<div />').append($(this.changed['shape']).append(this.view.el.innerText));
         this.view.model.set('content',newElem.html());
         this.view.el.innerHTML = newElem.html();

@@ -1,6 +1,6 @@
 {
   "name": "grapesjs-shape-divider",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "GrapesJS Shape Divider",
   "main": "dist/grapesjs-shape-divider.min.js",
   "scripts": {

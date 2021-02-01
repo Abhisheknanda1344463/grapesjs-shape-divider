@@ -1,6 +1,7 @@
 import grapesjs from 'grapesjs';
 import loadComponents from './components';
 import loadBlocks from './blocks';
+import styles from './styles';
 
 export default grapesjs.plugins.add('grapesjs-shape-divider', (editor, opts = {}) => {
   const options = { ...{
@@ -62,5 +63,8 @@ export default grapesjs.plugins.add('grapesjs-shape-divider', (editor, opts = {}
 
   // Add components
   loadBlocks(editor, options);
+
+  // Load Styles
+  styles(editor, options);
 
 });

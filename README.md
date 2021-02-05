@@ -1,7 +1,7 @@
-# Donate button in github
+
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/nanda987?locale.x=en_GB)
 
-#If You Like My Plugin Please donate.
+## ![#1589F0]If You Like My Plugin Please donate.
 
 # GrapesJS Shape Divider
 

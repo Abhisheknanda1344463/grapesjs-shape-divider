@@ -1,3 +1,5 @@
+# [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/nanda987?locale.x=en_GB)
+
 # GrapesJS Shape Divider
 
 This plugin adds a Shape divider block with different svg shapes.

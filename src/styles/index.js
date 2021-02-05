@@ -4,16 +4,19 @@ export default (editor, config) => {
 
   sm.getSectors().reset(csm && csm.length ? csm : [{
       name: 'Style Options',
-      open: false,
-      buildProps: ['width',  'height', 'color'],
+      open: true,
+      buildProps: ['display','width',  'height', 'color'],
       properties: [{
-        property: 'display',
         name: 'Visibility',
+        property: 'display',
         type: 'radio',
-        properties: [
-          {value: 'Visible', className: ''},
-          {value: 'Hidden', className: ''}
-        ],
+        list: [{
+            name: 'Visibility',
+            value: 'inherit'
+        }, {
+            name: 'Hidden',
+            value: 'none'
+        }],
       },{
         name: 'Color',
         property: 'color'
